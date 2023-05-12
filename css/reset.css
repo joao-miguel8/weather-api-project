@@ -126,3 +126,7 @@ table {
 button {
     border-style: none;
 }
+
+input {
+    border: none;
+}
