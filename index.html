@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../weather-api-app/css/reset.css" />
         <link rel="stylesheet" href="../weather-api-app/css/style.css" />
         <script src="../weather-api-app/js/main.js" defer></script>
@@ -12,22 +14,63 @@
     <body>
         <main>
             <form class="search-container">
-                <input class="location-input" type="text" />
+                <input class="location-input" type="text" placeholder="Enter location" />
                 <button class="location-search">search</button>
             </form>
-            <section class="weather-out-section">
-                <div class="primary-weather">
-                    <div class="primary-icon-container"></div>
-                    <h3>Heavy Rain</h3>
-                    <span>Sunday, 02 Oct</span>
+            <section class="section-weather-data-container-wrapper">
+                <section class="weather-output-section">
+                    <div class="primary-weather-container">
+                        <div class="primary-icon-container">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <h2>Heavy Rain</h2>
+                        <span>Sunday, 02 Oct</span>
 
-                    <span>24</span>
-                </div>
-                <div class="weather-metrics">
-                    <div class="metric-container wind">
-                        <h4>wind</h4>
+                        <span class="main-temp">24</span>
                     </div>
-                </div>
+                    <div class="weather-metrics">
+                        <!-- metric 1 -->
+                        <div class="metric-container wind-degree">
+                            <div class="metrics-icon-container">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+                            <div class="metric-stats">
+                                <h4>wind speed</h4>
+                                <span class="wind-speed-value"> 19.2km</span>
+                            </div>
+                        </div>
+                        <!-- metric 2 -->
+                        <div class="metric-container feels-like">
+                            <div class="metrics-icon-container">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+                            <div class="metric-stats">
+                                <h4>feels like</h4>
+                                <span class="feels-like-value"> 19.2km</span>
+                            </div>
+                        </div>
+                        <!-- metric 3 -->
+                        <div class="metric-container humidity">
+                            <div class="metrics-icon-container">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+                            <div class="metric-stats">
+                                <h4>humidity</h4>
+                                <span class="humidity-value"> 19.2km</span>
+                            </div>
+                        </div>
+                        <!-- metric 4 -->
+                        <div class="metric-container wind-speed">
+                            <div class="metrics-icon-container">
+                                <i class="fa-solid fa-wind"></i>
+                            </div>
+                            <div class="metric-stats">
+                                <h4>wind degrees</h4>
+                                <span class="wind-degrees-value"> 19.2km</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </main>
     </body>
